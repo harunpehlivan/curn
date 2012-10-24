@@ -285,7 +285,7 @@ request. Along with any patch you send:
 [What is RSS?]: http://www.xml.com/pub/a/2002/12/18/dive-into-xml.html
 [All About RSS]: http://www.faganfinder.com/search/rss.php
 [rawdog]: http://offog.org/code/rawdog.html
-[CHANGELOG]: CHANGELOG.txt
+[CHANGELOG]: https://github.com/bmc/curn/blob/master/CHANGELOG.md
 [FAQ]: FAQ.html
 [Ant]: http://ant.apache.org/
 [ocutil-jars]: http://software.clapper.org/java/util/install.shtml#Jars
