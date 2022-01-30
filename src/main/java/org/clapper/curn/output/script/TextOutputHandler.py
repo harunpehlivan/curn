@@ -84,7 +84,7 @@ def process_channels():
 
     for channel_wrapper in curn.channels:
         channel = channel_wrapper.getChannel()
-        totalNew = totalNew + channel.getItems().size()
+        totalNew += channel.getItems().size()
 
     if totalNew > 0:
         # If the config file specifies a message for this handler,
@@ -159,7 +159,7 @@ def process_channel (out, channel, feed_info, indentation):
             out.println (summary)
             indent (out, indentation)
 
-def indent (out, indentation):
+def indent(out, indentation):
     """
     Apply a level of indentation to a WordWrapWriter, by changing
     the WordWrapWriter's prefix string.
@@ -168,10 +168,7 @@ def indent (out, indentation):
     indentation - the numeric indentation level
     """
 
-    prefix = ""
-    for i in range (indentation):
-        prefix = prefix + "    "
-
+    prefix = "".join("    " for _ in range (indentation))
     out.setPrefix (prefix)
 
 # ---------------------------------------------------------------------------
